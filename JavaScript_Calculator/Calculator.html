@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Calculator</title>
+
+    <link rel="stylesheet" href="Calculator.css" />
+  </head>
+
+  <body>
+    <script src="Calculator.js"></script>
+    <h1>JavaScript Calculator</h1>
+
+    <div class="container">
+      <p id="total">Total: 0</p>
+      <hr />
+
+      <div class="row">
+        <button class="btn-num" onclick="clearAll()">AC</button>
+        <button class="btn-num" onclick="toggleSign()">+/-</button>
+        <button class="btn-num" onclick="chooseOperator('%')">%</button>
+        <button class="btn-num" onclick="chooseOperator('/')">/</button>
+      </div>
+      <div class="row">
+        <button class="btn-num" onclick="addNumber(7)">7</button>
+        <button class="btn-num" onclick="addNumber(8)">8</button>
+        <button class="btn-num" onclick="addNumber(9)">9</button>
+        <button class="btn-num" onclick="chooseOperator('x')">x</button>
+      </div>
+
+      <div class="row">
+        <button class="btn-num" onclick="addNumber(4)">4</button>
+        <button class="btn-num" onclick="addNumber(5)">5</button>
+        <button class="btn-num" onclick="addNumber(6)">6</button>
+        <button class="btn-num" onclick="chooseOperator('-')">-</button>
+      </div>
+      <div class="row">
+        <button class="btn-num" onclick="addNumber(1)">1</button>
+        <button class="btn-num" onclick="addNumber(2)">2</button>
+        <button class="btn-num" onclick="addNumber(3)">3</button>
+        <button class="btn-num" onclick="chooseOperator('+')">+</button>
+      </div>
+      <div class="row">
+        <button class="btn-num" id="special" onclick="addNumber(0)">0</button>
+        <button class="btn-num" onclick="addDecimal()">.</button>
+        <button class="btn-num" onclick="totalEqual()">=</button>
+      </div>
+    </div>
+  </body>
+</html>
